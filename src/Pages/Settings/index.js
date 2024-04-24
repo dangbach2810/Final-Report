@@ -57,6 +57,7 @@ const Settings = () => {
 			gender: gender,
 			dateOfBirth: dateOfBirth,
 		};
+		console.log(data)
 		apiClient
 			.fetchApiUpdateUser(data)
 			.then((res) => {

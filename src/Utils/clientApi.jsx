@@ -4,15 +4,19 @@ import { BASE_URL } from '../Contains/ConfigURL';
 
 
 export const callApi = (endpoint, method = "get", data = null) => {
+    console.log(TOKEN_GHN)
+    console.log(data)
     return axios({
         method,
         url: `${BASE_URL}/${endpoint}`,
         data,
         headers: {
-            "Content-Type" : "application/json",
-            "Authorization" : "Bearer " + TOKEN_GHN,
+            "Content-Type": "application/json-patch+json",
+            "Authorization": "Bearer " + TOKEN_GHN,
         }
+
     });
+
 }
 
 
@@ -24,9 +28,9 @@ export const callApiMuti = (endpoint, method = "get", data = null) => {
         data,
         headers: {
             'accept': 'text/plain',
-            "Content-Type" : "multipart/form-data",
-            "Authorization" : "Bearer " + TOKEN_GHN,
+            "Content-Type": "multipart/form-data",
+            "Authorization": "Bearer " + TOKEN_GHN,
         }
     });
-    
+
 }
