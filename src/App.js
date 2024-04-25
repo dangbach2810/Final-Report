@@ -11,7 +11,6 @@ import LoginPage from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 import BroadContext from "./Pages/BoardCard/BroadContext";
 import { ACCESS_TOKEN } from "./Contains/Config";
-import Settings from './Pages/Settings';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import ForgotPassWordPage from './Pages/ForgotPassWordPage';
@@ -26,9 +25,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/home" element={<HomePage />} />
           <Route path="/board/:boardId/schedule" element={<BroadContext />} />
-          <Route path="/settings" element={<Settings />} />
           <Route path="/workspace" element={<WorkSpaces />} />
           <Route path="/forgot-password" element={<ForgotPassWordPage />} />
           <Route path="/resume-user/:userID" element={<ResumeUser />} />

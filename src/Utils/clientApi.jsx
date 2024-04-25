@@ -4,8 +4,6 @@ import { BASE_URL } from '../Contains/ConfigURL';
 
 
 export const callApi = (endpoint, method = "get", data = null) => {
-    console.log(TOKEN_GHN)
-    console.log(data)
     return axios({
         method,
         url: `${BASE_URL}/${endpoint}`,

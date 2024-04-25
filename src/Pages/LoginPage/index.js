@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Input, Button, Checkbox } from 'antd';
-import Subito from './../../Assets/images/subito.png';
+//import Subito from './../../Assets/images/subito.png';
 import LeftBack from './../../Assets/images/left.png';
 import RightBack from './../../Assets/images/right.png';
 import { GooglePlusOutlined } from '@ant-design/icons';
@@ -54,10 +54,10 @@ export default function LoginPage(props) {
         <>
             {loading && <div className='loading-style'> <Loading type="bars" color="white" /> </div>}
             <div className="main-LOGI">
-                <h3 className='login-title'><img src={Subito} /></h3>
+                <h3 className='login-title'><img src="" /></h3>
                 <div className="main-content">
                     <div className="card-box">
-                        <h5 className="card-header">Login to Subito</h5>
+                        <h5 className="card-header">Login to BIT</h5>
                         <p style={{ textAlign: 'center', color: "red", paddingTop: '10px' }}>{validate ? validate : ''}</p>
                         <div className="card-body">
                             <Form

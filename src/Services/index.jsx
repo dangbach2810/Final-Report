@@ -7,7 +7,6 @@ export const getToken = () => {
 
 export const apiClient = {
   fetchApiLogin(data) {
-    console.log(data)
     return callApi("Users/login", "post", data);
   },
 

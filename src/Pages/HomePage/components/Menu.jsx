@@ -4,7 +4,8 @@ import {
 	Html5Outlined,
 	DownOutlined,
 	UserAddOutlined,
-	CloseOutlined
+	CloseOutlined,
+
 } from "@ant-design/icons";
 import SearchComponent from "./Search";
 import Settings from "./Settings";
@@ -193,7 +194,7 @@ export default function Menu(props) {
 					<div className="menu-left__logo">
 						<Link to="/">
 							<Html5Outlined />
-							<span className="logo">SUBITO</span>
+							<span className="logo">BIT</span>
 						</Link>
 					</div>
 					<div className="menu-left__list">
